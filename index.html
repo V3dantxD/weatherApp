@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+            <h3>Weather App</h3>
+            <div>Home</div>
+            <div>About Us</div>
+        </div>
+        <div class="right">
+            <input type="text" id = "place" class = "place" placeholder="Enter City name here..." value="">
+            <button class="btn" id="btn">Search</button>
+        </div>
+    </div>
+    <h1 id = "cityName"></h1>
+    <div class="container">
+        <div class="data" id="data1">
+            <h2 class = "line">Temperatures</h2>
+            <ul class = "tdata" id = "tdata">
+                <li>Temperature : <span id="temp">NaN</span></li>
+                <li>Max Temperature : <span id="mxtemp">NaN</span></li>
+                <li>Min Temperature : <span id="mntemp">NaN</span></li>
+            </ul>
+        </div>
+        <div class="data" id="data2">
+            <h2 class = "line">Humidity Info</h2>
+            <ul class = "hdata" id = "hdata">
+                <li>Wind Degree : <span id="windeg">NaN</span></li>
+                <li>Humudity : <span id="humidit">NaN</span></li>
+            </ul>
+        </div>
+        <div class="data" id="data3">
+            <h2 class = "line">Wind Info</h2>
+            <ul class = "wdata" id = "wdata">
+                <li>Wind Speed : <span id="windspeed">NaN</span></li>
+                <li>Sunrise : <span id="srtime">NaN</span></li>
+                <li>Sunset : <span id="sstime">NaN</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
